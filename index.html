@@ -11,12 +11,12 @@
         <img src="./resources/images/ic-logo.svg" />
         <h1 class="logo_desktop">ColmarAcademy</h1>
       </div>
-      <nav class="nav_mobile">
+      <nav class="mobile_header_nav">
         <img src="./resources/images/ic-on-campus.svg" />
         <img src="./resources/images/ic-online.svg" />
         <img src="./resources/images/ic-login.svg" />
       </nav>
-      <nav class="nav_desktop">
+      <nav class="desktop_header_nav">
         <ul>
           <li><a href="#campus">On campus</a></li>
           <li><a href="#online">Online</a></li>
@@ -26,13 +26,137 @@
       </nav>
     </header>
     <main>
+
       <section class="jumbotron">
         <img src="./resources/images/banner.jpg" />
         <div class="jumbotron_text">
           <h2>Learn something new everyday</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <btn class=""
+          <button type="button" class="btn btn-primary">Start here</button>
         </div>
-    </section>
+      </section>
+
+      <section class="desktop_jumbotron">
+
+        <div class="dj_headline">
+          <img src="./resources/images/information-main.jpg" />
+          <h2>It doesn't hurt to keep practicing</h2>
+          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tritique ligula."</p>
+          <p>Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+
+        <div class="dj_sideline">
+          <div class="sideline-1">
+            <img src="./resources/images/information-orientation.jpg" class="desktop_sl_image" />
+            <img src="./resources/images/information-orientation-mobile.jpg" class="mobile_sl_image" />
+            <h3>Orientation date</h3>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#readmore">Read more</a>
+          </div>
+          <div class="sideline-2">
+            <img src="./resources/images/information-campus.jpg" class="desktop_sl_image"/>
+            <img src="./resources/images/information-campus-mobile.jpg" class="mobile_sl_image"/>
+            <h3>Our campus</h3>
+            <p>Find which campus is close by you</p>
+            <a href="#readmore">Read more</a>
+          </div>
+          <div class="sideline-3">
+            <img src="./resources/images/information-guest-lecture.jpg" class="desktop_sl_image"/>
+            <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobile_sl_image"/>
+            <h3>Our guest lecture</h3>
+            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+            <a href="#readmore">Read more</a>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="gallery">
+        <h2>Start learning</h2>
+        <div class="mobile_gallery">
+          <h3>Software engineering
+        </div>
+        <div class="desktop_gallery">
+          <img src="./resources/images/course-software.jpg" />
+          <h3>Software engineering</h3>
+          <p>COURSES</p>
+          <p>Web Development, Mobile Development, iOT, APIs</p>
+        </div>
+        <div class="desktop_gallery">
+          <img src="./resources/images/course-computer-art.jpg" />
+          <h3>Computer art</h3>
+          <p>COURSES</p>
+          <p>Imaging & Design,Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+        </div>
+        <div class="desktop_gallery">
+          <img src="./resources/images/course-design.jpg" />
+          <h3>Design</h3>
+          <p>COURSES</p>
+          <p>User Experience Design, User Research, Visual Design</p>
+        </div>
+        <div class="desktop_gallery">
+          <img src="./resources/images/course-data.jpg" />
+          <h3>Data</h3>
+          <p>COURSES</p>
+          <p>Data Science, Big Data, SQL, Data Visualization</p>
+        </div>
+        <div class="desktop_gallery-">
+          <img src="./resources/images/course-business.jpg" />
+          <h3>Business</h3>
+          <p>COURSES</p>
+          <p>Product Development, Business Development, Startup</p>
+        </div>
+        <div class="desktop_gallery">
+          <img src="./resources/images/course-marketing.jpg" />
+          <h3>Marketing</h3>
+          <p>COURSES</p>
+          <p>Analytics, Content Marketing, Mobile Marketing</p>
+        </div>
+        <div class="mobile_gallery">
+          <h3>Software engineering</h3>
+          <h3>Computer art</h3>
+          <h3>Design</h3>
+          <h3>Data</h3>
+          <h3>Business</h3>
+          <h3>Marketing</h3>
+        </div>
+      </section>
+
+      <section class="thesis">
+        <h2>Thesis exhibit</h2>
+        <div class="thesis_content">
+          <video controls>
+            <source src="./resources/videos/thesis.mp4" type="video/mp4">
+            Your browser does not support the viedo tag.
+          </video>
+          <div class="desktop_thesis">
+            <h3>Reimagine urban</h3>
+            <p>"Curabitur vitae libero in ipsum porttitor consequet. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          </div>
+          <h3>
+          <div class="desktop_thesis-sl">
+            <div class="desktop_thesis-sl1">
+              <img src="./resources/images/thesis-fisma.jpg" />
+              <h3>Fisma: Besign and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+            <div class="desktop_thesis-sl2">
+              <img src="./resources/images/thesis-now-and-then.jpg" />
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>&#169; Colmar Academy. All rights reserved</p>
+        <nav class="desktop_footer_nav">
+          <a href="#terms">Terms</a>
+          <a href="#Privacy">Privacy</a>
+        </nav>
+      </footer>
+
+    </main>
   </body>
 </html>
