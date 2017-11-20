@@ -1,3 +1,292 @@
 @font-face {
-  font-family:
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v11/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Open Sans ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v15/EInbV5DfGHOiMmvb1Xr-hugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+h1, h2, h3, h4, h5, p, a, span {
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: 'Open Sans ExtraBold', sans-serif;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a {
+  color: #43a1ff;
+}
+
+img, video {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+header {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  height: 4rem;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+.header_nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo_desktop {
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: none;
+}
+
+.logo_desktop span {
+  color: #999;
+  font-weight: normal;
+}
+
+.desktop_header_nav {
+  display: none;
+  justify-content: space-around;
+  padding-right: 1.5rem;
+}
+
+.desktop_header_nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.desktop_header_nav li {
+  padding-right: 1rem;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding-top: 4rem;
+}
+
+.jumbotron {
+  background-color: #ccc;
+}
+
+.jumbotron_text {
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.jumbotron h2 {
+  line-height: 2.5rem;
+}
+
+.jumbotron h3 {
+  line-height: 2rem;
+  padding: 2rem 0 1.5rem;
+}
+
+.jumbotron button {
+  background-color: #999;
+  border: none;
+  color: #eee;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  padding: .5rem 0;
+  width: 100%;
+}
+
+.jumbotron button:hover {
+  background-color: #444;
+}
+
+.desktop_jumbotron {
+  margin-bottom: 2rem;
+}
+
+.dj_headline,
+.desktop_sl_image
+ {
+  display: none;
+}
+
+.dj_sideline h3,
+.dj_sideline p,
+.dj_sideline a {
+  margin: 1rem 1rem 1rem;
+}
+
+.sideline {
+  padding: 1rem;
+}
+
+.gallery h2,
+.thesis h2 {
+  border-top: solid 1px #eee;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.mobile_gallery {
+  margin: 1rem 1rem 2rem 1rem;
+}
+
+.mobile_gallery h3 {
+  background-color: #ddd;
+  margin-bottom: .5rem;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.desktop_gallery {
+  display: none;
+}
+
+.thesis video {
+  padding: 1rem 0 1.5rem;
+}
+
+.desktop_thesis {
+  display: none;
+}
+
+footer {
+  padding: 1rem;
+}
+
+footer span {
+  font-family: 'Tahoma', sans-serif;
+}
+
+.desktop_footer_nav {
+  display: none;
+}
+
+@media only screen and (min-width: 785px) {
+  header a {
+    color: #444;
+  }
+
+  .header_nav {
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    width: auto;
+  }
+
+  .logo {
+    padding-left: 1.5rem;
+  }
+
+  .desktop_header_nav {
+    display: flex;
+  }
+
+  .mobile_header_nav {
+    display: none;
+  }
+
+  .logo_desktop {
+    display: inherit;
+  }
+
+  .jumbotron {
+    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .jumbotron img {
+    border: solid 1px red;
+    display: flex;
+    flex: 1.5 0 0;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+
+  }
+
+  .jumbotron_text {
+    border: solid 1px red;
+    flex: 1 0 0;
+    margin: auto 0;
+    padding-left: 0;
+  }
+
+  .jumbotron_text h2,
+  .jumbotron_text h3,
+  .jumbotron_text button{
+    border: solid 1px red;
+    width: 17.5rem;
+  }
+
+  .mobile_sl_image {
+    display: none;
+  }
+
+  .desktop_jumbotron {
+    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dj_headline,
+  .desktop_sl_image {
+    display: inherit;
+  }
+
+  .dj_headline {
+    display: flex;
+    flex: 1.5 0 0;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+
+  .dj_sideline {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+  }
+
+  .sideline {
+    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+  }
 }

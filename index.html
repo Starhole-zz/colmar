@@ -4,17 +4,21 @@
     <meta charset="utf-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Codecademy Intensive Capstone | Colmar Academy</title>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
+
     <header>
-      <div class="logo">
-        <img src="./resources/images/ic-logo.svg" />
-        <h1 class="logo_desktop">ColmarAcademy</h1>
-      </div>
-      <nav class="mobile_header_nav">
-        <img src="./resources/images/ic-on-campus.svg" />
-        <img src="./resources/images/ic-online.svg" />
-        <img src="./resources/images/ic-login.svg" />
+
+      <nav class="header_nav">
+        <div class="logo">
+          <img src="./resources/images/ic-logo.svg" />
+          <h1 class="logo_desktop">Colmar<span>Academy</span></h1>
+        </div>
+        <img class="mobile_header_nav" src="./resources/images/ic-on-campus.svg" />
+        <img class="mobile_header_nav" src="./resources/images/ic-online.svg" />
+        <img class="mobile_header_nav" src="./resources/images/ic-login.svg" />
       </nav>
       <nav class="desktop_header_nav">
         <ul>
@@ -24,15 +28,17 @@
           <li><a href="#signin">Sign in</a></li>
         </ul>
       </nav>
+
     </header>
+
     <main>
 
       <section class="jumbotron">
         <img src="./resources/images/banner.jpg" />
         <div class="jumbotron_text">
           <h2>Learn something new everyday</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <button type="button" class="btn btn-primary">Start here</button>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          <button type="button" class="btn" onclick="alert('Starting... ?')">Start here</button>
         </div>
       </section>
 
@@ -46,26 +52,32 @@
         </div>
 
         <div class="dj_sideline">
-          <div class="sideline-1">
+          <div class="sideline">
             <img src="./resources/images/information-orientation.jpg" class="desktop_sl_image" />
             <img src="./resources/images/information-orientation-mobile.jpg" class="mobile_sl_image" />
-            <h3>Orientation date</h3>
-            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a href="#readmore">Read more</a>
+            <div class="sideline_text">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#readmore">Read more</a>
+            </div>
           </div>
-          <div class="sideline-2">
+          <div class="sideline">
             <img src="./resources/images/information-campus.jpg" class="desktop_sl_image"/>
             <img src="./resources/images/information-campus-mobile.jpg" class="mobile_sl_image"/>
-            <h3>Our campus</h3>
-            <p>Find which campus is close by you</p>
-            <a href="#readmore">Read more</a>
+            <div class="sideline_text">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a href="#readmore">Read more</a>
+            </div>
           </div>
-          <div class="sideline-3">
+          <div class="sideline">
             <img src="./resources/images/information-guest-lecture.jpg" class="desktop_sl_image"/>
-            <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobile_sl_image"/>
-            <h3>Our guest lecture</h3>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a href="#readmore">Read more</a>
+            <div class="sideline_text">
+              <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobile_sl_image"/>
+              <h3>Our guest lecture</h3>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a href="#readmore">Read more</a>
+            </div>
           </div>
         </div>
 
@@ -74,7 +86,12 @@
       <section class="gallery">
         <h2>Start learning</h2>
         <div class="mobile_gallery">
-          <h3>Software engineering
+          <h3>Software engineering</h3>
+          <h3>Computer art</h3>
+          <h3>Design</h3>
+          <h3>Data</h3>
+          <h3>Business</h3>
+          <h3>Marketing</h3>
         </div>
         <div class="desktop_gallery">
           <img src="./resources/images/course-software.jpg" />
@@ -100,7 +117,7 @@
           <p>COURSES</p>
           <p>Data Science, Big Data, SQL, Data Visualization</p>
         </div>
-        <div class="desktop_gallery-">
+        <div class="desktop_gallery">
           <img src="./resources/images/course-business.jpg" />
           <h3>Business</h3>
           <p>COURSES</p>
@@ -112,14 +129,6 @@
           <p>COURSES</p>
           <p>Analytics, Content Marketing, Mobile Marketing</p>
         </div>
-        <div class="mobile_gallery">
-          <h3>Software engineering</h3>
-          <h3>Computer art</h3>
-          <h3>Design</h3>
-          <h3>Data</h3>
-          <h3>Business</h3>
-          <h3>Marketing</h3>
-        </div>
       </section>
 
       <section class="thesis">
@@ -130,27 +139,28 @@
             Your browser does not support the viedo tag.
           </video>
           <div class="desktop_thesis">
-            <h3>Reimagine urban</h3>
-            <p>"Curabitur vitae libero in ipsum porttitor consequet. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
-          </div>
-          <h3>
-          <div class="desktop_thesis-sl">
-            <div class="desktop_thesis-sl1">
-              <img src="./resources/images/thesis-fisma.jpg" />
-              <h3>Fisma: Besign and Prototype</h3>
-              <p>Designer showcase of new prototype product</p>
+            <div class="desktop_thesis_hl">
+              <h3>Reimagine urban</h3>
+              <p>"Curabitur vitae libero in ipsum porttitor consequet. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
             </div>
-            <div class="desktop_thesis-sl2">
-              <img src="./resources/images/thesis-now-and-then.jpg" />
-              <h3>Now and then</h3>
-              <p>Research study about New York</p>
+            <div class="desktop_thesis-sl">
+              <div class="desktop_thesis-sl1">
+                <img src="./resources/images/thesis-fisma.jpg" />
+                <h3>Fisma: Besign and Prototype</h3>
+                <p>Designer showcase of new prototype product</p>
+              </div>
+              <div class="desktop_thesis-sl2">
+                <img src="./resources/images/thesis-now-and-then.jpg" />
+                <h3>Now and then</h3>
+                <p>Research study about New York</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <footer>
-        <p>&#169; Colmar Academy. All rights reserved</p>
+        <span>&#169; Colmar Academy. All rights reserved</span>
         <nav class="desktop_footer_nav">
           <a href="#terms">Terms</a>
           <a href="#Privacy">Privacy</a>
