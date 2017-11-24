@@ -13,12 +13,12 @@
 
       <nav class="header_nav">
         <div class="logo">
-          <img src="./resources/images/ic-logo.svg" />
-          <h1 class="logo_desktop">Colmar<span>Academy</span></h1>
+          <a href="#home"><img src="./resources/images/ic-logo.svg" alt="navigate to home"/></a>
+          <a href="home"<h1 class="logo_desktop">Colmar<span>Academy</span></h1></a>
         </div>
-        <img class="mobile_header_nav" src="./resources/images/ic-on-campus.svg" />
-        <img class="mobile_header_nav" src="./resources/images/ic-online.svg" />
-        <img class="mobile_header_nav" src="./resources/images/ic-login.svg" />
+        <a href="campus"><img class="mobile_header_nav" src="./resources/images/ic-on-campus.svg" alt="navigate to on campus page"/></a>
+        <a href="#online"><img class="mobile_header_nav" src="./resources/images/ic-online.svg" alt="navigate to online resources"/></a>
+        <a href="#login"><img class="mobile_header_nav" src="./resources/images/ic-login.svg" alt="navigate to login page"/></a>
       </nav>
       <nav class="desktop_header_nav">
         <ul>
@@ -34,7 +34,7 @@
     <main>
 
       <section class="jumbotron">
-        <img src="./resources/images/banner.jpg" />
+        <img src="./resources/images/banner.jpg" alt="Women reading and writing." />
         <div class="jumbotron_text">
           <h2>Learn something new everyday</h2>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -48,7 +48,7 @@
           <img src="./resources/images/information-main.jpg" />
           <h2>It doesn't hurt to keep practicing</h2>
           <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tritique ligula."</p>
-          <p>Emanuel, Sr Strategist at Hiring.com</p>
+          <span>Emanuel, Sr Strategist at Hiring.com</span>
         </div>
 
         <div class="dj_sideline">
@@ -70,7 +70,7 @@
               <a href="#readmore">Read more</a>
             </div>
           </div>
-          <div class="sideline">
+          <div class="sideline" id="sl_noborder">
             <img src="./resources/images/information-guest-lecture.jpg" class="desktop_sl_image"/>
             <div class="sideline_text">
               <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobile_sl_image"/>
@@ -93,64 +93,72 @@
           <h3>Business</h3>
           <h3>Marketing</h3>
         </div>
-        <div class="desktop_gallery">
-          <img src="./resources/images/course-software.jpg" />
-          <h3>Software engineering</h3>
-          <p>COURSES</p>
-          <p>Web Development, Mobile Development, iOT, APIs</p>
+        <div class="desktop_gallery_row1">
+          <div class="desktop_gallery">
+            <img src="./resources/images/course-software.jpg" />
+            <h3>Software engineering</h3>
+            <h4>COURSES</h4>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </div>
+          <div class="desktop_gallery dg_mid">
+            <img src="./resources/images/course-computer-art.jpg" />
+            <h3>Computer art</h3>
+            <h4>COURSES</h4>
+            <p>Imaging & Design,Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+          </div>
+          <div class="desktop_gallery">
+            <img src="./resources/images/course-design.jpg" />
+            <h3>Design</h3>
+            <h4>COURSES</h4>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </div>
         </div>
-        <div class="desktop_gallery">
-          <img src="./resources/images/course-computer-art.jpg" />
-          <h3>Computer art</h3>
-          <p>COURSES</p>
-          <p>Imaging & Design,Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-        </div>
-        <div class="desktop_gallery">
-          <img src="./resources/images/course-design.jpg" />
-          <h3>Design</h3>
-          <p>COURSES</p>
-          <p>User Experience Design, User Research, Visual Design</p>
-        </div>
-        <div class="desktop_gallery">
-          <img src="./resources/images/course-data.jpg" />
-          <h3>Data</h3>
-          <p>COURSES</p>
-          <p>Data Science, Big Data, SQL, Data Visualization</p>
-        </div>
-        <div class="desktop_gallery">
-          <img src="./resources/images/course-business.jpg" />
-          <h3>Business</h3>
-          <p>COURSES</p>
-          <p>Product Development, Business Development, Startup</p>
-        </div>
-        <div class="desktop_gallery">
-          <img src="./resources/images/course-marketing.jpg" />
-          <h3>Marketing</h3>
-          <p>COURSES</p>
-          <p>Analytics, Content Marketing, Mobile Marketing</p>
+        <div class="desktop_gallery_row2">
+          <div class="desktop_gallery">
+            <img src="./resources/images/course-data.jpg" />
+            <h3>Data</h3>
+            <h4>COURSES</h4>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </div>
+          <div class="desktop_gallery dg_mid">
+            <img src="./resources/images/course-business.jpg" />
+            <h3>Business</h3>
+            <h4>COURSES</h4>
+            <p>Product Development, Business Development, Startup</p>
+          </div>
+          <div class="desktop_gallery">
+            <img src="./resources/images/course-marketing.jpg" />
+            <h3>Marketing</h3>
+            <h4>COURSES</h4>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
         </div>
       </section>
 
       <section class="thesis">
         <h2>Thesis exhibit</h2>
         <div class="thesis_content">
-          <video controls>
-            <source src="./resources/videos/thesis.mp4" type="video/mp4">
-            Your browser does not support the viedo tag.
-          </video>
-          <div class="desktop_thesis">
-            <div class="desktop_thesis_hl">
+          <div class="desktop_thesis-hl">
+            <video controls>
+              <source src="./resources/videos/thesis.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="desktop_thesis-hl_text">
               <h3>Reimagine urban</h3>
               <p>"Curabitur vitae libero in ipsum porttitor consequet. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
             </div>
-            <div class="desktop_thesis-sl">
-              <div class="desktop_thesis-sl1">
-                <img src="./resources/images/thesis-fisma.jpg" />
+          </div>
+          <div class="desktop_thesis-sl">
+            <div class="sideline">
+              <img src="./resources/images/thesis-fisma.jpg" />
+              <div class="sideline_text">
                 <h3>Fisma: Besign and Prototype</h3>
                 <p>Designer showcase of new prototype product</p>
               </div>
-              <div class="desktop_thesis-sl2">
-                <img src="./resources/images/thesis-now-and-then.jpg" />
+            </div>
+            <div class="sideline">
+              <img src="./resources/images/thesis-now-and-then.jpg" />
+              <div class="sideline_text">
                 <h3>Now and then</h3>
                 <p>Research study about New York</p>
               </div>
