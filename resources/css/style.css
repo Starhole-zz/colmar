@@ -1,3 +1,7 @@
+/*Coded by Lee*/
+/*Updated on 11-26-17*/
+
+/*Font declarations*/
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
@@ -6,6 +10,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+/*Global styles*/
 h1, h2, h3, h4, p, a, span {
   font-family: 'Segoe UI', sans-serif;
   font-size: 16px;
@@ -14,7 +19,6 @@ h1, h2, h3, h4, p, a, span {
 
 h2 {
   color: #444;
-  font-family: 'Segoe UI', sans-serif;
   font-size: 2.5rem;
   font-weight: bolder;
 }
@@ -40,7 +44,6 @@ a {
 
 span {
   color: #555;
-  font-family: 'Segoe UI', sans-serif;
   font-size: .95rem;
 }
 
@@ -50,6 +53,7 @@ img, video {
   padding: 0;
 }
 
+/*Header and logo with main navigation*/
 header {
   align-items: center;
   background-color: white;
@@ -115,12 +119,15 @@ header {
   padding-right: 1rem;
 }
 
+/*--------------------*/
+/*----Main styles----*/
 main {
   margin: 0 auto;
   max-width: 1024px;
   padding-top: 4rem;
 }
 
+/*Main headline and jumbotron*/
 .jumbotron {
   background-color: #ccc;
 }
@@ -153,10 +160,11 @@ main {
   background-color: #444;
 }
 
+/*Headline and sideline*/
 .dj_headline,
 .desktop_sl_image
  {
-  display: none;
+  display: none; /*Hide headline for desktop*/
 }
 
 .sideline h3,
@@ -173,8 +181,9 @@ main {
   color: #444;
 }
 
+/*Gallery section, mobile is a list and desktop contains pictures*/
 .gallery h2,
-.thesis h2 {
+.thesis h2 { /*Thesis title has same style*/
   border-top: solid 1px #eee;
   display: flex;
   justify-content: center;
@@ -197,9 +206,10 @@ main {
 }
 
 .desktop_gallery {
-  display: none;
+  display: none; /*Hide desktop gallery for desktop*/
 }
 
+/*Thesis section*/
 .thesis h2 {
   margin-bottom: 1rem;
 }
@@ -210,9 +220,10 @@ main {
 
 .desktop_thesis-hl_text,
 .desktop_thesis-sl {
-  display: none;
+  display: none; /*Hide thesis for desktop*/
 }
 
+/*Footer copyright verbiage and navigation*/
 footer {
   display: flex;
   flex-direction: row;
@@ -221,10 +232,12 @@ footer {
 }
 
 .desktop_footer_nav {
-  display: none;
+  display: none; /*Hide footer navigation*/
 }
 
+/*Desktop styles*/
 @media only screen and (min-width: 620px) {
+  /*Header--hide icons and replace with text*/
   header a {
     color: #444;
   }
@@ -248,13 +261,14 @@ footer {
   }
 
   .mobile_header_nav {
-    display: none;
+    display: none; /*Hide mobile navigation (icons)*/
   }
 
   .logo_desktop {
-    display: inherit;
+    display: inherit; /*Show logo words*/
   }
 
+  /*Reconfigure jumbotron content for text to appear to the right of image*/
   .jumbotron {
     display: flex;
   }
@@ -276,8 +290,9 @@ footer {
     width: 65%;
   }
 
+  /*Headline and sideline section*/
   .mobile_sl_image {
-    display: none;
+    display: none; /*Hide mobile version of sideline images*/
   }
 
   .desktop_jumbotron {
@@ -287,7 +302,7 @@ footer {
 
   .dj_headline,
   .desktop_sl_image {
-    display: inherit;
+    display: inherit; /*Show headline for desktop; below are styles for desktop headline*/
   }
 
   .dj_headline {
@@ -306,9 +321,10 @@ footer {
   }
 
   .dj_sideline {
-    display: none;
+    display: none; /*hide mobile sideline for aesthetic reasons; will redisplay as the page is resized larger*/
   }
 
+  /*Gallery section*/
   .gallery {
     background-color: #eee;
     display: flex;
@@ -331,7 +347,7 @@ footer {
     flex-direction: row;
   }
 
-  .desktop_gallery {
+  .desktop_gallery { /*Weirdness with center image forced a width constraint to control proportions*/
     background-color: white;
     width: 33.33%;
   }
@@ -357,7 +373,7 @@ footer {
   }
 
   .mobile_gallery {
-    display: none;
+    display: none; /*Hide the mobile version of the gallery (list)*/
   }
 
   .desktop_gallery {
@@ -366,6 +382,7 @@ footer {
     flex-direction: column;
   }
 
+  /*Thesis section*/
   .thesis h2 {
     margin-bottom: 2rem;
   }
@@ -386,11 +403,13 @@ footer {
 
   .desktop_thesis-hl_text,
   .desktop_thesis-sl {
-    display: none;
+    display: none; /*Hide sideline for consistency with the jumbotron styling; hid text for aesthetics*/
   }
 }
 
+/*Desktop styles with redisplay of elements hid in the intermediary sizing above*/
 @media only screen and (min-width: 1050px) {
+  /*Resize headline and redisplay sideline information*/
   .dj_headline {
     width: 60%;
   }
@@ -403,6 +422,7 @@ footer {
     width: 40%;
   }
 
+  /*Redisplay text under video and reinstate the sideline information*/
   .thesis {
     border-bottom: solid 1px #eee;
     padding-bottom: 2rem;
@@ -451,6 +471,7 @@ footer {
     width: 65%;
   }
 
+  /*Footer navigation is shown*/
   footer {
     padding-left: 1.5rem;
   }
